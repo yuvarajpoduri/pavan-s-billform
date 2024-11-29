@@ -4,36 +4,73 @@
   padding: 20px;
 }
 
-.billing-form {
-  margin: 20px 0;
+/* Billing Form Container */
+.billing-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
 }
 
+.billing-form {
+  width: 400px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.billing-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Input and Select styles */
 .billing-form input,
 .billing-form select {
+  width: 100%;
   padding: 10px;
-  margin: 5px;
+  margin: 10px 0;
   font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
 
+.billing-form input:focus,
+.billing-form select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Label styles */
 .billing-form label {
-  margin: 5px;
   font-size: 16px;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
 }
 
+/* Submit Button */
 .btn-primary {
-  padding: 10px 20px;
+  width: 100%;
+  padding: 12px;
   background-color: #007bff;
   color: white;
   border: none;
   cursor: pointer;
   font-size: 16px;
   border-radius: 5px;
+  transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
   background-color: #0056b3;
 }
 
+/* Table Styles for Entries */
 .entries {
   margin: 20px 0;
 }
@@ -70,4 +107,9 @@ th {
 
 tr .delete-btn {
   display: inline;
+}
+
+/* Styling for anchor tags */
+a {
+  text-decoration: none;
 }
