@@ -1,0 +1,108 @@
+  /* Container for the home page */
+  .home-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style for the title */
+  h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  /* Container for the cards, styled as a grid with 4 columns */
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 20px; /* Space between the cards */
+    padding: 10px;
+  }
+  
+  /* Style for individual cards */
+  .card {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px; /* Increased height to give more room for content */
+    position: relative; /* To position buttons at the bottom */
+  }
+  
+  /* Make the image take the full width of the card */
+  .card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Ensure the image covers the area without stretching */
+    border-radius: 10px;
+    margin-bottom: 15px; /* Space between image and content */
+  }
+  
+  /* Styling for the item name (heading) */
+  .item-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px; /* Space between name and content */
+  }
+  
+  /* Styling for the content text */
+  .red-bold,
+  .green-bold {
+    font-weight: bold;
+    margin-bottom: 20px; /* Space between content and buttons */
+  }
+  
+  .red-bold {
+    color: red;
+  }
+  
+  .green-bold {
+    color: green;
+  }
+  
+  /* Styling for buttons container to position at the bottom */
+  .buttons-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  /* Styling for primary buttons (Edit and Delete) */
+  button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 50%;
+  }
+  
+  /* Styling for Edit button */
+  .edit-btn {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .edit-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Styling for Delete button */
+  .deletebtn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .deletebtn:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+  }
+  
